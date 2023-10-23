@@ -1,0 +1,112 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .button{
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+    }
+</style>
+<script>
+    function add(){
+        let num1 = parseFloat(document.getElementById("number1").value);
+        let num2 = parseFloat(document.getElementById("number2").value);
+
+        document.getElementById("result").value = num1 + num2;
+    }
+</script>
+<body>
+    숫자 1: <input type="text" id="number1" value="9"><br>
+    숫자 2: <input type="text" id="number2" value="6"><br>
+
+    <input type="button" value="+" onclick="add()" class="button">
+    <input type="button" value="-" class="button">
+    <input type="button" value="*" class="button">
+    <input type="button" value="/" class="button"><br>
+    연산결과 : <input type="text" id="result" value="">
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <script>
+        let mode = "white";
+        function sub() {
+            if (mode == "white") {
+//
+                mode = "black";
+            } else {
+//
+                mode = "white";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>다크 모드와 라이트 모드</h2>
+    <p>버튼을 누르면 다크 모드와 라이트 모드가 토글됩니다.</p>
+    <button onclick="sub()">다크모드 토글</button>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+    <img id="image" src="pome.png" width="120" height="100">
+    <script>
+        function changeImage() {
+
+//
+        }
+    </script>
+    <input type="button" onclick="changeImage()" value="눌러보세요" />
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        function get() {
+//
+        }
+        function set(v) {
+//
+        }
+    </script>
+</head>
+
+
+<body>
+    <div id="ex">여기가 div로 선언되었습니다.</div>
+    <a href="#" onclick="get()">div 요소 내용 출력하기</a><br />
+    <a href="#" onclick="set('변경되었습니다.')">div 요소 내용 변경하기</a>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script>
+        function addNode(t) {
+               let node = document.createElement("p");
+node.innerHTML = t;
+document.getElementById("target").append(node);
+        }
+    </script>
+    </head>
+<body>
+    
+<div id="target" onclick="addNode('동적으로 텍스트가 추가됩니다.')"
+    style="font: 20px italic;">여기를 클릭하세요.</div>
+</body>
+</html>
